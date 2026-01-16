@@ -1,6 +1,9 @@
-const toDoArray = ['Heh', 'Yo'];
+const toDoArray = [];
 
-let toDoHtml = '';
+
+function displayToDo(){
+
+  let toDoHtml = '';
 
 for(let i = 0; i < toDoArray.length; i++){
 
@@ -16,7 +19,7 @@ for(let i = 0; i < toDoArray.length; i++){
 
  document.querySelector('.js-to-do-list').innerHTML = toDoHtml;
 
-
+}
 
 
 function addToArray(){
@@ -30,6 +33,8 @@ function addToArray(){
 
 
   toDoInputElem.value = '';
+
+  displayToDo();
 
   // console.log(toDoArray);
 
@@ -51,14 +56,3 @@ function addToArray(){
 
 
 
-
-function displayToDo(){
-
-   const toDoDisplay = document.querySelector('.js-input-display');
-
-   toDoDisplay.innerHTML = toDoArray;
-
-
-
-
-}
