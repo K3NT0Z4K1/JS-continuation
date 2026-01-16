@@ -17,7 +17,7 @@ function addToArray(){
 
   // displayToDo();
 
-  for(let i = 0; i <= toDoArray.length - 1; i++){
+  for(let i = 0; i < toDoArray.length; i++){
 
     const value = toDoArray[i];
 
