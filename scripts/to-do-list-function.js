@@ -7,7 +7,9 @@ function addToArray(){
 
   toDoArray.push(toDoInputElem);
 
-  console.log(toDoArray);
+  // console.log(toDoArray);
+
+  displayToDo();
 
 
 
@@ -15,7 +17,11 @@ function addToArray(){
 
 function displayToDo(){
 
-  //  document.querySelector('.js-input-display').innerHTML =
+   const toDoDisplay = document.querySelector('.js-input-display');
+
+   toDoDisplay.innerHTML = toDoArray;
+
+
 
 
 }
