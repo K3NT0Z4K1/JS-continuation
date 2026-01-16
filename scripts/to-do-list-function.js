@@ -1,19 +1,20 @@
-const toDoArray = [];
+const toDoArray = ['Heh', 'Yo'];
 
 let toDoHtml = '';
 
 for(let i = 0; i < toDoArray.length; i++){
 
-  const val = toDoArray[i];
+  let val = toDoArray[i];
 
   const html = `<p> ${val} </p>`;
 
-  const todo = document.querySelector('.js-to-do-list');
+  toDoHtml += html;
 
-  
-
+ 
 
 }
+
+ document.querySelector('.js-to-do-list').innerHTML = toDoHtml;
 
 
 
@@ -34,12 +35,12 @@ function addToArray(){
 
   // displayToDo();
 
-  for(let i = 0; i < toDoArray.length; i++){
+  // for(let i = 0; i < toDoArray.length; i++){
 
-    const value = toDoArray[i];
+  //   const value = toDoArray[i];
 
 
-    console.log(value);
+  //   console.log(value);
 
     // const toDoDisplay = document.querySelector('.js-input-display');
 
@@ -50,7 +51,6 @@ function addToArray(){
 
 
 
-}
 
 function displayToDo(){
 
