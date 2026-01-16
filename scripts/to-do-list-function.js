@@ -3,10 +3,15 @@ const toDoArray = [];
 
 function addToArray(){
 
-  const toDoInputElem = document.querySelector('.js-toDo-input').value;
+  const toDoInputElem = document.querySelector('.js-toDo-input');
+
+  const name = toDoInputElem.value;
 
 
-  toDoArray.push(toDoInputElem);
+  toDoArray.push(name);
+
+
+  toDoInputElem.value = '';
 
   // console.log(toDoArray);
 
@@ -20,7 +25,7 @@ function displayToDo(){
 
    const toDoDisplay = document.querySelector('.js-input-display');
 
-   toDoDisplay.innerHTML = toDoArray;
+   toDoDisplay.innerHTML = `${toDoArray}`;
 
 
 
