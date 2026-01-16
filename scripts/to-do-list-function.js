@@ -1,5 +1,20 @@
 const toDoArray = [];
 
+let toDoHtml = '';
+
+for(let i = 0; i < toDoArray.length; i++){
+
+  const val = toDoArray[i];
+
+  const html = `<p> ${val} </p>`;
+
+  const todo = document.querySelector('.js-to-do-list');
+
+  
+
+
+}
+
 
 
 
