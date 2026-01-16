@@ -15,7 +15,21 @@ function addToArray(){
 
   // console.log(toDoArray);
 
-  displayToDo();
+  // displayToDo();
+
+  for(let i = 0; i <= toDoArray.length - 1; i++){
+
+    const value = toDoArray[i];
+
+
+    console.log(value);
+
+    // const toDoDisplay = document.querySelector('.js-input-display');
+
+    // toDoDisplay.innerHTML = value;
+
+
+  }
 
 
 
@@ -25,7 +39,7 @@ function displayToDo(){
 
    const toDoDisplay = document.querySelector('.js-input-display');
 
-   toDoDisplay.innerHTML = `${toDoArray}`;
+   toDoDisplay.innerHTML = toDoArray;
 
 
 
