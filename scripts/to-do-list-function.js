@@ -15,7 +15,9 @@ for(let i = 0; i < toDoArray.length; i++){
   ${val} 
 
   <button 
-  onclick=" ToDoArray.splice(${i},1) ">Delete</button>
+  onclick=" toDoArray.splice(${i},1);
+  displayToDo();
+  ">Delete</button>
   
   </p>`;
 
