@@ -27,18 +27,22 @@ console.log(array[lastValue]);
 // 11c function
 function arraySwap(array){
 
-  const firstValue = array[0];
+  let firstValue = array[0];
 
   const tobeLast = firstValue;
 
   const lastValueIndex = array.length - 1;
 
-  const lastValue = array[lastValueIndex];
+  let lastValue = array[lastValueIndex];
 
-  firstValue = lastValue;
+  console.log(`The original array ${array}`)
 
-  lastValue = tobeLast;
+  array[0] = lastValue;
 
+  array[lastValueIndex] = firstValue;
+
+  console.log(`The Swapped array ${array}`)
 
 }
 
+arraySwap(nums);
