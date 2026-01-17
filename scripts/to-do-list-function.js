@@ -1,4 +1,11 @@
-const toDoArray = ['Mag code', 'Mag kain'];
+const toDoArray = [
+  {name: 'Mag code',
+   dueDate: '12-22-2026'
+  },
+    {name: 'Mag debug',
+   dueDate: '12-22-2026'
+  }
+];
 
 
 function displayToDo(){
@@ -8,6 +15,8 @@ function displayToDo(){
 for(let i = 0; i < toDoArray.length; i++){
 
   let val = toDoArray[i];
+
+  const {name, dueDate} = toDoArray;
 
   const html = `
   <p> 
