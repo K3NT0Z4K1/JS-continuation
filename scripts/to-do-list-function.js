@@ -1,4 +1,4 @@
-const toDoArray = [];
+const toDoArray = ['Mag code', 'Mag kain'];
 
 
 function displayToDo(){
@@ -9,13 +9,23 @@ for(let i = 0; i < toDoArray.length; i++){
 
   let val = toDoArray[i];
 
-  const html = `<p> ${val} </p>`;
+  const html = `
+  <p> 
+  
+  ${val} 
+
+  <button 
+  onclick=" ToDoArray.splice(${i},1) ">Delete</button>
+  
+  </p>`;
 
   toDoHtml += html;
 
  
 
 }
+
+console.log(toDoHtml);
 
  document.querySelector('.js-to-do-list').innerHTML = toDoHtml;
 

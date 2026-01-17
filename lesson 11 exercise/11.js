@@ -83,13 +83,13 @@ function arraySwap(array){
 
 let i = 5;
 
-while(i >= 0){
+// while(i >= 0){
 
-  console.log(i);
+//   console.log(i);
 
-  i--
+//   i--
 
-}
+// }
 
 
 
