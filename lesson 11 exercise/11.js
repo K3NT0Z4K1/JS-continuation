@@ -58,9 +58,31 @@ function arraySwap(array){
 
 //11e
 
-for(let i = 5; i >= 0; i--){
+// for(let i = 5; i >= 0; i--){
 
-  console.log(i);
-  
+//   console.log(i);
+
+// }
+
+
+//11f
+
+let i = 0;
+
+while(i <= 10){
+
+   
+  if(i % 2 === 0){
+
+    console.log(i);
+    
+  }
+
+  i++
+
+
 }
+
+
+
 
