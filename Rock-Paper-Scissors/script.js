@@ -23,7 +23,7 @@ function autoPlay(){
   setInterval(function(){
 
       const playerMove = pickComputerMove();
-      playGame(playGame);
+      playGame(playerMove);
     
   }, 1000);
 
