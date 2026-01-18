@@ -3,6 +3,16 @@ body {
   color: white;
   font-family: Arial;
 }
+.game-body{
+
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border: solid white;
+  padding: 80px;
+  border-radius: 10px;
+}
 
 .title {
   font-size: 30px;
@@ -33,7 +43,8 @@ body {
   margin-top: 60px;
 }
 
-.reset-score-button {
+.reset-score-button,
+.auto-play-button {
   background-color: white;
   border: none;
   font-size: 15px;
