@@ -7,21 +7,21 @@ function displayToDo(){
 
 for(let i = 0; i < toDoArray.length; i++){
 
-  let val = toDoArray[i];
-
   const {name, dueDate} = toDoArray;
 
   const html = `
-  <p> 
-  
-  ${val} 
+
+  <div>${name}</div>
+
+
+  <div>${dueDate}</div>
 
   <button 
   onclick=" toDoArray.splice(${i},1);
   displayToDo();
   ">Delete</button>
   
-  </p>`;
+  `;
 
   toDoHtml += html;
 
@@ -29,7 +29,7 @@ for(let i = 0; i < toDoArray.length; i++){
 
 }
 
-console.log(toDoHtml);
+// console.log(toDoHtml);
 
  document.querySelector('.js-to-do-list').innerHTML = toDoHtml;
 
@@ -54,6 +54,7 @@ function addToArray(){
 
 
   toDoInputElem.value = '';
+  dueDateElem.value = '';
 
   console.log(toDoArray);
 
