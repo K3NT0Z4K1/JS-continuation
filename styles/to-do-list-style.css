@@ -13,3 +13,23 @@ body{
   margin-bottom: 10px;
 
 }
+.name-input,
+.due-date-input{
+  font-size: 15px;
+  padding: 6px;
+}
+.add-button{
+  background-color: rgb(63, 235, 63);
+  border: none;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+.add-button:hover{
+  background-color: rgb(102, 240, 102);
+  
+}
+.add-button:active{
+  background-color: rgb(91, 198, 91);
+
+}
