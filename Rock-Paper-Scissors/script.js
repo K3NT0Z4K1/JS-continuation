@@ -16,6 +16,20 @@ if (!score) {
 }
 */
 
+function autoPlay(){
+
+  
+
+  setInterval(function(){
+
+      const playerMove = pickComputerMove();
+      playGame(playGame);
+    
+  }, 1000);
+
+
+}
+
 function playGame(playerMove) {
   const computerMove = pickComputerMove();
 
