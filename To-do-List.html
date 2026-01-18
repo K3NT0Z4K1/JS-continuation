@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To do List</title>
+  <link rel="stylesheet" href="styles/to-do-list-style.css">
 </head>
 <body>
 
   <p>To do List</p>
+
+  <div class="todo-input-grid">
 
   <input class="js-toDo-input" placeholder="Todo Name" type="text">
 
@@ -15,9 +18,9 @@
 
   <button class="js-add-button" onclick=" addToArray();">Add</button>
 
-  <p class="js-input-display"></p>
+  </div>
 
-  <div class="js-to-do-list"></div>
+  <div class="js-to-do-list todo-grid"></div>
 
 
   <script src="scripts/to-do-list-function.js"></script>
