@@ -50,8 +50,8 @@ function addToArray(){
 
 
   toDoArray.push({
-    name: name,
-    dueDate: dueDate
+    name,
+    dueDate
   });
 
 
