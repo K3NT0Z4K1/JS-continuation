@@ -1,11 +1,4 @@
-const toDoArray = [
-  {name: 'Mag code',
-   dueDate: '12-22-2026'
-  },
-    {name: 'Mag debug',
-   dueDate: '12-22-2026'
-  }
-];
+const toDoArray = [];
 
 
 function displayToDo(){
@@ -49,11 +42,21 @@ function addToArray(){
 
   const name = toDoInputElem.value;
 
+  const dueDateElem = document.querySelector('.js-date-input');
 
-  toDoArray.push(name);
+  const dueDate = dueDateElem.value;
+
+
+  toDoArray.push({
+    name: name,
+    dueDate: dueDate
+  });
 
 
   toDoInputElem.value = '';
+
+  console.log(toDoArray);
+
 
   displayToDo();
 
