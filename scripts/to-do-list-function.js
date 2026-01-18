@@ -7,7 +7,9 @@ function displayToDo(){
 
 for(let i = 0; i < toDoArray.length; i++){
 
-  const {name, dueDate} = toDoArray;
+  let valueObject = toDoArray[i];
+
+  const {name, dueDate} = valueObject;
 
   const html = `
 
