@@ -7,10 +7,14 @@ body{
   grid-template-columns: 200px 150px 100px;
   column-gap: 10px;
   row-gap: 10px;
+  align-items: center;
 }
 .todo-input-grid{
 
   margin-bottom: 10px;
+  align-items: stretch;
+
+
 
 }
 .name-input,
@@ -32,4 +36,12 @@ body{
 .add-button:active{
   background-color: rgb(91, 198, 91);
 
+}
+.delete-button{
+  background-color: darkred;
+  color: white;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
 }

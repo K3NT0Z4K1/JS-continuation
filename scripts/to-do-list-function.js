@@ -18,7 +18,7 @@ for(let i = 0; i < toDoArray.length; i++){
 
   <div>${dueDate}</div>
 
-  <button 
+  <button class="delete-button"
   onclick=" toDoArray.splice(${i},1);
   displayToDo();
   ">Delete</button>
