@@ -28,11 +28,7 @@ function displayToDo() {
     toDoHtml += html;
 
 
-
-
-
-
-  })
+  });
 
 
 
