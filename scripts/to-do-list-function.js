@@ -30,6 +30,7 @@ function displayToDo() {
 
   });
 
+document.querySelector('.js-to-do-list').innerHTML = toDoHtml;
 
 
 
@@ -37,7 +38,6 @@ function displayToDo() {
 
 // console.log(toDoHtml);
 
-document.querySelector('.js-to-do-list').innerHTML = toDoHtml;
 
 
 
