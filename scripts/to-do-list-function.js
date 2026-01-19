@@ -1,17 +1,17 @@
 const toDoArray = [];
 
 
-function displayToDo(){
+function displayToDo() {
 
   let toDoHtml = '';
 
-for(let i = 0; i < toDoArray.length; i++){
+  toDoArray.forEach(function (valueObject, index) {
 
-  let valueObject = toDoArray[i];
 
-  const {name, dueDate} = valueObject;
+    const { name, dueDate } = valueObject;
 
-  const html = `
+
+    const html = `
 
   <div>${name}</div>
 
@@ -19,26 +19,34 @@ for(let i = 0; i < toDoArray.length; i++){
   <div>${dueDate}</div>
 
   <button class="delete-button"
-  onclick=" toDoArray.splice(${i},1);
+  onclick=" toDoArray.splice(${index},1);
   displayToDo();
   ">Delete</button>
   
   `;
 
-  toDoHtml += html;
+    toDoHtml += html;
 
- 
+
+
+
+
+
+  })
+
+
+
 
 }
 
 // console.log(toDoHtml);
 
- document.querySelector('.js-to-do-list').innerHTML = toDoHtml;
-
-}
+document.querySelector('.js-to-do-list').innerHTML = toDoHtml;
 
 
-function addToArray(){
+
+
+function addToArray() {
 
   const toDoInputElem = document.querySelector('.js-toDo-input');
 
@@ -74,12 +82,12 @@ function addToArray(){
 
   //   console.log(value);
 
-    // const toDoDisplay = document.querySelector('.js-input-display');
+  // const toDoDisplay = document.querySelector('.js-input-display');
 
-    // toDoDisplay.innerHTML = value;
+  // toDoDisplay.innerHTML = value;
 
 
-  }
+}
 
 
 
