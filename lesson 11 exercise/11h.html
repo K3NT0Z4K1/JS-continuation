@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+
+    function newArrayCreator(array) {
+
+      let newArrayWithPlusOne = [];
+
+      for (let i = 0; i < array.length; i++) {
+
+        let num = array[i] + 1;
+        newArrayWithPlusOne.push(num);
+
+
+
+      }
+
+      console.log(`The original array: ${array}
+The new array with additional: ${newArrayWithPlusOne}`);
+
+
+    }
+
+    const arrayOrig = [1, 2, 3, 4, 5];
+
+    newArrayCreator(arrayOrig);
+
+
+
+
+
+
+  </script>
+
+</body>
+
+</html>
