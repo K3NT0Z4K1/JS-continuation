@@ -1,34 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
 
   <script>
 
-    function addNum(array, num){
+    function addNum(array, num) {
 
       let newArr = [];
 
-      for(let i = 0; i < array.lenght; i++){
+      for (let i = 0; i < array.lenght; i++) {
 
         let number = array[i] + num;
 
         newArr.push(number);
 
-
-
       }
-
-
-
-
-
+      console.log(`The orig array: ${array}
+The new array: ${newArr}`);
     }
   </script>
-  
+
 </body>
+
 </html>
