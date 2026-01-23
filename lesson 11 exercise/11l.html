@@ -21,40 +21,34 @@
 
     function minMax(nums) {
 
-      let a;
-      let b;
 
       for (let i = 0; i < nums.length; i++) {
 
-        a = nums[i];
-        b = nums[i];
+        let a = nums[i];
 
-        if (a >= b) {
+        if(a > minMaxz.min){
+
+          minMaxz.min = a;
+          
+
+        }else if (a < minMaxz.max){
 
           minMaxz.max = a;
-          a = b;
+        }
 
-        } 
-
-        
-
-
+       
 
       }
-      console.log(minMaxz.max);
-
-      const arr = [1, 2, 3];
-
-      minMax(arr);
-
-
-
-
-
-
-
+      console.log(minMaxz);
 
     }
+
+
+    const arr = [1, 2, 3];
+
+    minMax(arr);
+
+
 
 
   </script>
