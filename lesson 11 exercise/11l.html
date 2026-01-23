@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>11l</title>
 </head>
+
 <body>
 
   <script>
 
-   
+    let minMaxz = {
+      min: null,
+      max: null
+    };
 
-    function minMax(nums){
 
-      let minMax = {
-        min: null,
-        max: null
-      };
+
+
+    function minMax(nums) {
 
       let a;
       let b;
 
-      for(let i = 1; i < nums.length; i++){
+      for (let i = 0; i < nums.length; i++) {
 
-        a = nums[0];
+        a = nums[i];
         b = nums[i];
 
-        if(a > b){
+        if (a >= b) {
 
-          minMax.max = a;
+          minMaxz.max = a;
+          a = b;
 
-        }else if(a < b){
+        } 
 
-          minMax.min = a;
-        }
-
-        a = b;
-
-        console.log(minMax.min);
+        
 
 
 
       }
+      console.log(minMaxz.max);
 
-      const arr = [1,2,3];
+      const arr = [1, 2, 3];
 
       minMax(arr);
 
-      
+
 
 
 
@@ -58,6 +58,7 @@
 
 
   </script>
-  
+
 </body>
+
 </html>
