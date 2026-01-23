@@ -24,19 +24,18 @@
 
       for (let i = 0; i < nums.length; i++) {
 
-        let a = nums[i];
+        let a = null;
+        let b = nums[i];
 
-        if(a > minMaxz.min){
+        if (a > b) {
 
-          minMaxz.min = a;
-          
+          minMaxz.min = b;
 
-        }else if (a < minMaxz.max){
+        } else {
 
-          minMaxz.max = a;
+          minMaxz.max = b;
+          a = b;
         }
-
-       
 
       }
       console.log(minMaxz);
