@@ -31,13 +31,13 @@
 
         if (a > minMaxz.max) {
 
-          minMaxz.min = a;
+          minMaxz.max = a;
 
         }
 
         if (a < minMaxz.min) {
 
-          minMaxz.max = a;
+          minMaxz.max = b;
 
         }
 
@@ -48,14 +48,8 @@
 
 
     const arr = [1, 2, 3];
-    const arr1 = [3, 2, 1];
-    const arr2 = [1, 2, 3];
-    
-    
 
-
-    // minMax(arr);
-    minMax(arr1);
+    minMax(arr);
 
 
 
