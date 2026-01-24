@@ -12,8 +12,8 @@
   <script>
 
     let minMaxz = {
-      min: null,
-      max: null
+      min: nums[0],
+      max: nums[0]
     };
 
 
@@ -22,10 +22,10 @@
     function minMax(nums) {
 
 
-      for (let i = 0; i < nums.length; i++) {
+      for (let i = 1; i < nums.length; i++) {
 
-        let a = null;
-        let b = nums[i];
+        let a = nums[i];
+        
 
         if (a > b) {
 
@@ -34,7 +34,7 @@
         } else {
 
           minMaxz.max = b;
-          a = b;
+          
         }
 
       }
