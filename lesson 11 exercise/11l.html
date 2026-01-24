@@ -11,23 +11,23 @@
 
   <script>
 
-   
+
 
 
 
     function minMax(nums) {
 
-       let minMaxz = {
-      min: nums[0],
-      max: nums[0]
-    };
+      let minMaxz = {
+        min: nums[0],
+        max: nums[0]
+      };
 
 
 
       for (let i = 1; i < nums.length; i++) {
 
         let a = nums[i];
-        
+
 
         if (a > minMaxz.max) {
 
@@ -38,7 +38,7 @@
         if (a < minMaxz.min) {
 
           minMaxz.max = b;
-          
+
         }
 
       }
@@ -48,6 +48,11 @@
 
 
     const arr = [1, 2, 3];
+    const arr1 = [1, 2, 3];
+    const arr2 = [1, 2, 3];
+    
+    
+
 
     minMax(arr);
 
