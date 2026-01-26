@@ -9,4 +9,6 @@ function addInArray(){
 
 console.log(arr);
 
+inputValueElem.value= '';
+
 }
