@@ -14,3 +14,8 @@ console.log(arr);
 inputValueElem.value= '';
 
 }
+
+function showIt(){
+
+  
+}
