@@ -13,9 +13,13 @@ console.log(arr);
 
 inputValueElem.value= '';
 
+showIt()
+
 }
 
 function showIt(){
 
-  
+  const showELem = document.querySelector('.js-show');
+
+  showELem.innerHTML = `${arr}`;
 }
