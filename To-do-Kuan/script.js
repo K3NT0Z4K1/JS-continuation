@@ -1,1 +1,6 @@
 const arr = [];
+
+function addInArray(){
+
+  
+}
