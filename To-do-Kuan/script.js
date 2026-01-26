@@ -7,6 +7,6 @@ function addInArray(){
   arr.push(inputValueElem);
 
 
-
+console.log(arr);
 
 }
