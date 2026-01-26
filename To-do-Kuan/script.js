@@ -2,9 +2,11 @@ const arr = [];
 
 function addInArray(){
 
-  const inputValueElem = document.querySelector('.js-input').value;
+  const inputValueElem = document.querySelector('.js-input');
 
-  arr.push(inputValueElem);
+  const name = inputValueElem.value;
+
+  arr.push(name);
 
 
 console.log(arr);
