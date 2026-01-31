@@ -4,8 +4,7 @@
   <body>
     <p>
       <button onclick="
-        calculation += '1';
-        console.log(calculation);
+        updateCalculation(1);
       ">1</button>
 
       <button onclick="
@@ -103,13 +102,21 @@
 
     <script>
 
-      function updateCalculation(){
+
+
+      function updateCalculation(num){
         
+        let calculation = '';
+
+        calculation += num;
+
+        console.log(calculation);
+
 
       }
 
 
-      let calculation = '';
+      
     </script>
   </body>
 </html>
