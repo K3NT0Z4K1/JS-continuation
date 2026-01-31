@@ -68,12 +68,11 @@
       ">.</button>
 
     <button onclick="
-    
-      ">=</button>
+        calculate();
+    ">=</button>
 
     <button onclick="
-        calculation += ' / ';
-        console.log(calculation);
+        updateCalculation('/');
       ">/</button>
   </p>
 
@@ -86,14 +85,14 @@
 
   <script>
 
-    function calculate(){
+    function calculate() {
 
-          // Note: eval() takes a string and runs it as code.
-        // Avoid using eval() in real world projects since
-        // it can potentially be given harmful code to run.
-        // Only use eval() for learning purposes.
-        calculation = eval(calculation);
-        console.log(calculation);
+      // Note: eval() takes a string and runs it as code.
+      // Avoid using eval() in real world projects since
+      // it can potentially be given harmful code to run.
+      // Only use eval() for learning purposes.
+      calculation = eval(calculation);
+      console.log(calculation);
     }
 
 
