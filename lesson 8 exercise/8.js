@@ -20,7 +20,28 @@ product.price = '500 cents';
 
 // console.log(product);
 
+//8c
+
 // console.log(product['delivery-time']);
+
+
+//8d
+
+const product1 = {
+
+  name: 'basketball',
+  price: 2095,
+  ['delivery-time']: '3 days'
+}
+
+const product2 = {
+
+  name: 'jersey',
+  price: 1200,
+  ['delivery-time']: '5 days'
+
+}
+
 
 function comparePrice(product1, product2){
 
@@ -30,7 +51,7 @@ function comparePrice(product1, product2){
 
   }else {
 
-    console.log(`The Product 1 is less expensive the price is ${product1} and the other is ${product2}`);
+    console.log(`The Product 2 is less expensive the price is ${product2} and the other is ${product2}`);
 
 
   }
