@@ -24,6 +24,17 @@ product.price = '500 cents';
 
 function comparePrice(product1, product2){
 
-  
+  if(product1.price < product2.price){
+
+    console.log(`The Product 1 is less expensive the price is ${product1} and the other is ${product2}`);
+
+  }else {
+
+    console.log(`The Product 1 is less expensive the price is ${product1} and the other is ${product2}`);
+
+
+  }
+
+
 }
 
