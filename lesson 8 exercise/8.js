@@ -20,5 +20,10 @@ product.price = '500 cents';
 
 // console.log(product);
 
-console.log(product['delivery-time']);
+// console.log(product['delivery-time']);
+
+function comparePrice(product1, product2){
+
+  
+}
 
