@@ -20,3 +20,5 @@ product.price = '500 cents';
 
 // console.log(product);
 
+console.log(product['delivery-time']);
+
