@@ -1,5 +1,6 @@
 const arr = [];
 
+
 function addInArray(){
 
   const inputValueElem = document.querySelector('.js-input');
@@ -16,6 +17,7 @@ inputValueElem.value= '';
 showIt()
 
 }
+
 
 function showIt(){
 
