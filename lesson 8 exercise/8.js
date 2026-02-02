@@ -76,4 +76,5 @@ function isSameProduct(product1,product2){
 }
 
 
+console.log(isSameProduct(product1,product2));
 
