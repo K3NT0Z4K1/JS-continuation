@@ -36,8 +36,8 @@ const product1 = {
 
 const product2 = {
 
-  name: 'jersey',
-  price: 1200,
+  name: 'basketball',
+  price: 2095,
   ['delivery-time']: '5 days'
 
 }
