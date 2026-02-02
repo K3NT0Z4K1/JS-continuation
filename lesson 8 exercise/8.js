@@ -64,7 +64,7 @@ function comparePrice(product1, product2){
 
 // 8e
 
-function isSameProduction(product1){
+function isSameProduction(product1,product2){
 
 }
 
